@@ -1,11 +1,12 @@
 .left{
     width: 20%;
-    background-color: aqua;
     float: left;
     color: black;
   }
   .right{
     float: right;
     width: 80%;
-      background-color: red;
     }
+  .navbar{
+      padding-left: 100px !important;
+  }
