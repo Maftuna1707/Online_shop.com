@@ -30,9 +30,22 @@
 </nav>
       <main>
           <div class="left">
-             <input type="checkbox">APPLE<br>
-             <input type="checkbox">HP<br>
-             <input type="checkbox">LINUX
+              <div id="phones">
+                  <input class="dropbtn" onclick="press()" value="Phones"></input></a>
+                  <div class="dropdown-content" style="left:0;">
+                      <input type="checkbox">APPLE<br>
+                      <input type="checkbox">HP<br>
+                      <input type="checkbox">LINUX
+                  </div>
+              </div>
+              <div id="computers">
+                  <input class="dropbtn" onclick="press()" value="Computers"></input></a>
+                  <div class="dropdown-content" style="left:0;">
+                      <input type="checkbox">APPLE<br>
+                      <input type="checkbox">HP<br>
+                      <input type="checkbox">LINUX
+                  </div>
+              </div>
           </div>
           <div class="right">
               <div class="apple_first">Hello</div>
@@ -42,5 +55,6 @@
       </main>
 
 <script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
