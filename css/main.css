@@ -13,16 +13,12 @@
   .navbar{
       padding-left: 100px !important;
   }
-.dropbtn {
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
 #phones{
     position: relative;
+    cursor: pointer;
 }
 #computers{
+    cursor: pointer;
     position: relative;
 }
 #companies_c{
