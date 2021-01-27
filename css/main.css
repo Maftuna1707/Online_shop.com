@@ -2,11 +2,13 @@
     width: 20%;
     float: left;
     color: black;
-    text-align: center;
+    padding-left: 30px;
+    border-right: 3px solid cornflowerblue;
   }
   .right{
     float: right;
     width: 80%;
+    position: relative;
     }
   .navbar{
       padding-left: 100px !important;
@@ -18,15 +20,16 @@
     cursor: pointer;
 }
 #phones{
-    position: absolute;
+    position: relative;
 }
 #computers{
-    position: absolute;
+    position: relative;
 }
-.dropdown-content {
-    display: block;
-    position: absolute;
-    right: 0;
-    min-width: 160px;
-    z-index: 1;
+#companies_c{
+    display: none;
+    margin-left: 40px;
+}
+#companies_p{
+    display: none;
+    margin-left: 40px;
 }
