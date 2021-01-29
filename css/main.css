@@ -2,7 +2,7 @@
     width: 20%;
     float: left;
     color: black;
-    padding-left: 50px;
+    padding-left: 80px;
     border-right: 3px solid cornflowerblue;
   }
   .right{
@@ -10,8 +10,15 @@
     width: 80%;
     position: relative;
     }
+  .about{
+      position: absolute;
+      margin-left: 20px;
+      display: inline-block;
+      width: 40%;
+      float: right;
+  }
   .navbar{
-      padding-left: 100px !important;
+      padding-left: 80px !important;
   }
 #phones{
     position: relative;
@@ -36,4 +43,20 @@
 }
 #text{
     display:none
+}
+article{
+    height: 250px;
+    width: 180px;
+    margin: 10px;
+}
+img{
+    display: inline-block;
+    float: left;
+    width: 85%;
+    height: 150px;
+    position: relative;
+}
+.sort{
+    float: right;
+    margin-right: 80px;
 }
