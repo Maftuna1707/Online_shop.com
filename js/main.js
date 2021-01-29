@@ -6,14 +6,22 @@ function l_laptops() {
     document.getElementById("menu_right2").className = "bi bi-chevron-down"
     document.getElementById("companies_c").style.display = "block";
 }
+let left = document.getElementById("left");
+let right = document.getElementById("right");
 let main_right = document.getElementById("main");
 function iPhone() {
     let checkBox = document.getElementById("myCheck_iphone");
     let m_iphone = document.getElementById("iphone");
     if (checkBox.checked == true){
+        left.style.borderRightStyle = "none"
+        right.style.borderLeftColor = "#0d6efd"
+        right.style.borderLeftStyle = "solid"
         main_right.style.display = "none";
         m_iphone.style.display = "block";
     } else {
+        right.style.borderLeftStyle = "none"
+        left.style.borderRightColor = "#0d6efd"
+        left.style.borderRightStyle = "solid"
         main_right.style.display = "block";
         m_iphone.style.display = "none";
     }
@@ -56,9 +64,15 @@ function sony() {
     let m_sony = document.getElementById("sony");
     if (checkBox_sony.checked == true){
         main_right.style.display = "none";
+        left.style.borderRightStyle = "none"
+        right.style.borderLeftColor = "#0d6efd"
+        right.style.borderLeftStyle = "solid"
         m_sony.style.display = "block";
     } else {
         main_right.style.display = "block";
+        right.style.borderLeftStyle = "none"
+        left.style.borderRightColor = "#0d6efd"
+        left.style.borderRightStyle = "solid"
         m_sony.style.display = "none";
     }
 }
@@ -81,10 +95,16 @@ function huawei() {
     let checkBox_huawei = document.getElementById("myCheck_huawei");
     let m_huawei = document.getElementById("huawei");
     if (checkBox_huawei.checked == true){
+        left.style.borderRightStyle = "none"
+        right.style.borderLeftColor = "#0d6efd"
+        right.style.borderLeftStyle = "solid"
         main_right.style.display = "none";
         m_huawei.style.display = "block";
     } else {
         main_right.style.display = "block";
+        right.style.borderLeftStyle = "none"
+        left.style.borderRightColor = "##0d6efd"
+        left.style.borderRightStyle = "solid"
         m_huawei.style.display = "none";
     }
 }
@@ -108,8 +128,15 @@ function macBook() {
     let m_macBook = document.getElementById("macBook");
     if (checkBox_macBook.checked == true){
         main_right.style.display = "none";
+        left.style.borderRightStyle = "none"
+        right.style.borderLeftColor = "0d6efd"
+        right.style.borderLeftStyle = "solid"
+        main_right.style.display = "none";
         m_macBook.style.display = "block";
     } else {
+        right.style.borderLeftStyle = "none"
+        left.style.borderRightColor = "0d6efd"
+        left.style.borderRightStyle = "solid"
         main_right.style.display = "block";
         m_macBook.style.display = "none";
     }
@@ -135,9 +162,15 @@ document.getElementById("img3_macBook").src = m_2020M1.src
 //     var checkBox_sony = document.getElementById("myCheck_sony");
 //     var m_sony = document.getElementById("sony");
 //     if (checkBox_sony.checked == true){
+//        left.style.borderRightStyle = "none"
+//         right.style.borderLeftColor = "0d6efd"
+//         right.style.borderLeftStyle = "solid"
 //         main_right.style.display = "none";
 //         m_sony.style.display = "block";
 //     } else {
+//        right.style.borderLeftStyle = "none"
+//         left.style.borderRightColor = "0d6efd"
+//         left.style.borderRightStyle = "solid"
 //         main_right.style.display = "block";
 //         m_sony.style.display = "none";
 //     }
@@ -161,10 +194,16 @@ document.getElementById("img3_macBook").src = m_2020M1.src
 //     var checkBox_huawei = document.getElementById("myCheck_huawei");
 //     var m_huawei = document.getElementById("huawei");
 //     if (checkBox_huawei.checked == true){
+//        left.style.borderRightStyle = "none"
+//          right.style.borderLeftColor = "0d6efd"
+//          right.style.borderLeftStyle = "solid"
 //         main_right.style.display = "none";
 //         m_huawei.style.display = "block";
 //     } else {
 //         main_right.style.display = "block";
+//         right.style.borderLeftStyle = "none"
+//          left.style.borderRightColor = "0d6efd"
+//          left.style.borderRightStyle = "solid"
 //         m_huawei.style.display = "none";
 //     }
 // }
@@ -188,10 +227,16 @@ function honor() {
     var m_honor = document.getElementById("honor");
     if (checkBox_honor.checked == true){
         main_right.style.display = "none";
+        left.style.borderRightStyle = "none"
+        right.style.borderLeftColor = "0d6efd"
+        right.style.borderLeftStyle = "solid"
         m_honor.style.display = "block";
     } else {
         main_right.style.display = "block";
         m_honor.style.display = "none";
+        right.style.borderLeftStyle = "none"
+        left.style.borderRightColor = "0d6efd"
+        left.style.borderRightStyle = "solid"
     }
 }
 let honor30 = {
