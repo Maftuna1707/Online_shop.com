@@ -25,17 +25,29 @@ let iphone8 = {
     price: '$299.99',
     src: 'images/apple8.png'
 }
+document.getElementById("iP8_memory").innerHTML = iphone8.memory
+document.getElementById("iP8_version").innerHTML = iphone8.version
+document.getElementById("iP8_prise").innerHTML = iphone8.price
+document.getElementById("img1").src = iphone8.src
 let iphone11pro = {
     memory: '64GB',
-    name: 'iPhone 8',
-    price: '$299.99',
+    version: 'iPhone 11 Pro',
+    price: '$999.99',
     src: 'images/apple11pro.png'
 }
+document.getElementById("iP11pro_memory").innerHTML = iphone11pro.memory
+document.getElementById("iP11pro_version").innerHTML = iphone11pro.version
+document.getElementById("iP11pro_prise").innerHTML = iphone11pro.price
+document.getElementById("img2").src = iphone11pro.src
 let iphoneXS = {
+    memory: '64GB',
+    version: 'iPhone 11 Pro',
+    price: '$999.99',
     src: 'images/appleXS.png'
 }
-document.getElementById("img1").src = iphone8.src
-document.getElementById("img2").src = iphone11pro.src
+document.getElementById("iPXS_memory").innerHTML = iphoneXS.memory
+document.getElementById("iPXS_version").innerHTML = iphoneXS.version
+document.getElementById("iPXS_prise").innerHTML = iphoneXS.price
 document.getElementById("img3").src = iphoneXS.src
 
 

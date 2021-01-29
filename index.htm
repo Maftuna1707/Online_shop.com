@@ -27,6 +27,9 @@
             </li>
         </ul>
     </div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+    </svg>
 </nav>
           <main class="left">
               <div id="phones" onclick="l_phones()">Phones
@@ -51,7 +54,7 @@
           <main class="right">
               <div id="main">Hello world!</div>
               <div id="iphone" style="display:none">
-                  <p>Checkbox is CHECKED!</p>
+                  <p>Cell phones of iPhone brand Company!</p>
                   <div class="sort">
                   <label>Sort by: </label>
                   <select>
@@ -60,12 +63,23 @@
                   </select>
                   </div><br>
                   <article id="apple_first"><img id="img1"><div class="about">
-                      <h6>Version: </h6><p id="iP8_version">
+                      <h6>Version: </h6><p id="iP8_version"></p>
+                      <h6>Memory: </h6><p id="iP8_memory"></p>
                       <h6>Prise: </h6><p id="iP8_prise"></p>
                       <button>Add to Cart</button>
                   </div></article><hr>
-                  <article id="apple_second"><img id="img2"><div class="about">Hello</div></article><hr>
-                  <article id="apple_third"><img id="img3"><div class="about">Hello</div></article><hr>
+                  <article id="apple_second"><img id="img2"><div class="about">
+                      <h6>Version: </h6><p id="iP11pro_version"></p>
+                      <h6>Memory: </h6><p id="iP11pro_memory"></p>
+                      <h6>Prise: </h6><p id="iP11pro_prise"></p>
+                      <button>Add to Cart</button>
+                  </div></article><hr>
+                  <article id="apple_third"><img id="img3"><div class="about">
+                      <h6>Version: </h6><p id="iPXS_version"></p>
+                      <h6>Memory: </h6><p id="iPXS_memory"></p>
+                      <h6>Prise: </h6><p id="iPXS_prise"></p>
+                      <button>Add to Cart</button>
+                  </div></article>
               </div>
               <div id="sony" style="display:none">
                   <p>Checkbox is CHECKED!</p>
@@ -138,13 +152,6 @@
                   <article id="hp_third"><img id="img3_hp"></article>
               </div>
           </main>
-<footer>
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2020 Copyright:
-        <a class="text-dark" href="#">EWS</a>
-    </div>
-    <!-- Copyright -->
-</footer>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 

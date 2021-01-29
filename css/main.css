@@ -64,3 +64,12 @@ footer{
     display: block;
     margin-top: 300px;
 }
+.bi-cart2{
+    color: white;
+    height: 30px;
+    width: 30px;
+    margin-right: 80px;
+}
+h6{
+    display: inline-block;
+}
