@@ -60,3 +60,7 @@ img{
     float: right;
     margin-right: 80px;
 }
+footer{
+    display: block;
+    margin-top: 300px;
+}

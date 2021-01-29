@@ -21,7 +21,7 @@ function iPhone() {
 
 let iphone8 = {
     memory: '64GB',
-    name: 'iPhone 8',
+    version: 'iPhone 8',
     price: '$299.99',
     src: 'images/apple8.png'
 }
