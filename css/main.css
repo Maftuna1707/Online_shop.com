@@ -1,5 +1,7 @@
 nav{
     height: 70px !important;
+    top: 0 !important;
+    position: sticky !important;
 }
 #left{
     /*border-right: 2px solid #0d6efd;*/
@@ -24,6 +26,22 @@ nav{
   .navbar{
       padding-left: 80px !important;
   }
+#counter_box{
+    border-radius: 50% 50% 0% 50%;
+    text-align: center;
+    width: 18px;
+    height: 18px;
+    color: #0c63e4;
+    background-color: white;
+    margin-bottom: 27px;
+
+}
+#counter{
+    transform: translate(-50%,-50%);
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
 #phones{
     position: relative;
     cursor: pointer;
@@ -90,8 +108,8 @@ button{
 }
 .bi-cart2{
     color: white;
-    height: 28px;
-    width: 28px;
+    height: 40px;
+    width: 40px;
     padding-right: 5px;
 }
 .carousel-item>img{

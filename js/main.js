@@ -251,3 +251,9 @@ let honor9A = {
 document.getElementById("img1_honor").src = honor9A.src
 document.getElementById("img2_honor").src = honor20.src
 document.getElementById("img3_honor").src = honor30.src
+
+let counter = 0
+document.getElementsByTagName("button").onclick = function() {
+    counter++
+}
+document.getElementById("counter").innerHTML = counter
