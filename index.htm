@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>8-03</title>
+    <title>OnlineShop</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -27,7 +27,7 @@
             </li>
         </ul>
     </div>
-    <div id="counter_box"><p id="counter"></p></div>
+    <div id="counter_box"><p id="counter">0</p></div>
     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
         <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
     </svg>
@@ -79,31 +79,31 @@
                   <div class="sort">
                   <label>Sort by: </label>
                   <select>
-                      <option>Prise</option>
+                      <option>Price</option>
                       <option>Date</option>
                   </select>
                   </div><br>
                   <article id="apple_first"><img id="img1"><div class="about">
                       <h6>Version: </h6><p id="iP8_version"></p>
                       <h6>Memory: </h6><p id="iP8_memory"></p>
-                      <h6>Prise: </h6><p id="iP8_prise"></p>
-                      <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                      <h6>Price: </h6><p id="iP8_price"></p>
+                      <button onclick="count()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
                           <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
                       </svg>Add to Cart</button>
                   </div></article><hr>
                   <article id="apple_second"><img id="img2"><div class="about">
                       <h6>Version: </h6><p id="iP11pro_version"></p>
                       <h6>Memory: </h6><p id="iP11pro_memory"></p>
-                      <h6>Prise: </h6><p id="iP11pro_prise"></p>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
-                          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                      </svg>
+                      <h6>Price: </h6><p id="iP11pro_price"></p>
+                      <button onclick="count()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
                   </div></article><hr>
                   <article id="apple_third"><img id="img3"><div class="about">
                       <h6>Version: </h6><p id="iPXS_version"></p>
                       <h6>Memory: </h6><p id="iPXS_memory"></p>
-                      <h6>Prise: </h6><p id="iPXS_prise"></p>
-                      <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                      <h6>Price: </h6><p id="iPXS_price"></p>
+                      <button onclick="count()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
                           <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
                       </svg>Add to Cart</button>
                   </div></article>
@@ -113,70 +113,224 @@
                   <div class="sort">
                       <label>Sort by: </label>
                       <select>
-                          <option>Prise</option>
+                          <option>Price</option>
                           <option>Date</option>
                       </select>
                   </div><br>
-                  <article id="sony_first"><img id="img1_sony"></article>
-                  <article id="sony_second"><img id="img2_sony"></article>
-                  <article id="sony_third"><img id="img3_sony"></article>
+                  <article id="sony_first"><img id="img1_sony"><div class="about">
+                    <h6>Version: </h6><p id="xperia5_version"></p>
+                    <h6>Memory: </h6><p id="xperia5_memory"></p>
+                    <h6>Price: </h6><p id="xperia5_price"></p>
+                    <button onclick="count()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article><hr>
+                  <article id="sony_second"><img id="img2_sony"><div class="about">
+                    <h6>Version: </h6><p id="xperia10_version"></p>
+                    <h6>Memory: </h6><p id="xperia10_memory"></p>
+                    <h6>Price: </h6><p id="xperia10_price"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article><hr>
+                  <article id="sony_third"><img id="img3_sony"><div class="about">
+                    <h6>Version: </h6><p id="xperia7_version"></p>
+                    <h6>Memory: </h6><p id="xperia7_memory"></p>
+                    <h6>Price: </h6><p id="xperia7_price"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article><hr>
               </div>
               <div id="huawei" style="display:none">
                   <p class="beginning">Cell phones of Huawei brand Company!</p>
                   <div class="sort">
                       <label>Sort by: </label>
                       <select>
-                          <option>Prise</option>
+                          <option>Price</option>
                           <option>Date</option>
                       </select>
                   </div><br>
-                  <article id="huawei_first"><img id="img1_huawei"></article>
-                  <article id="huawei_second"><img id="img2_huawei"></article>
-                  <article id="huawei_third"><img id="img3_huawei"></article>
+                  <article id="huawei_first"><img id="img1_huawei"><div class="about">
+                    <h6>Version: </h6><p id="huawei_version"></p>
+                    <h6>Memory: </h6><p id="huawei_memory"></p>
+                    <h6>Price: </h6><p id="huawei_price"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article>
+                  <article id="huawei_second"><img id="img2_huawei"><div class="about">
+                    <h6>Version: </h6><p id="huawei2_version"></p>
+                    <h6>Memory: </h6><p id="huawei2_memory"></p>
+                    <h6>Price: </h6><p id="huawei2_price"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article>
+                  <article id="huawei_third"><img id="img3_huawei"><div class="about">
+                    <h6>Version: </h6><p id="huawei3_version"></p>
+                    <h6>Memory: </h6><p id="huawei3_memory"></p>
+                    <h6>Price: </h6><p id="huawei3_prise"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article>
               </div>
               <div id="honor" style="display:none">
                   <p class="beginning">Cell phones of Honor brand Company!</p>
                   <div class="sort">
                       <label>Sort by: </label>
                       <select>
-                          <option>Prise</option>
+                          <option>Price</option>
                           <option>Date</option>
                       </select>
                   </div><br>
-                  <article id="honor_first"><img id="img1_honor"></article>
-                  <article id="honor_second"><img id="img2_honor"></article>
-                  <article id="honor_third"><img id="img3_honor"></article>
+                  <article id="honor_first"><img id="img1_honor"><div class="about">
+                    <h6>Version: </h6><p id="honor1_version"></p>
+                    <h6>Memory: </h6><p id="honor1_memory"></p>
+                    <h6>Price: </h6><p id="honor1_price"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article>
+                  <article id="honor_second"><img id="img2_honor"><div class="about">
+                    <h6>Version: </h6><p id="honor2_version"></p>
+                    <h6>Memory: </h6><p id="honor2_memory"></p>
+                    <h6>Price: </h6><p id="honor2_price"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article>
+                  <article id="honor_third"><img id="img3_honor"><div class="about">
+                    <h6>Version: </h6><p id="honor3_version"></p>
+                    <h6>Memory: </h6><p id="honor3_memory"></p>
+                    <h6>Price: </h6><p id="honor3_price"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article>
               </div>
               <div id="macBook" style="display:none">
                   <p class="beginning">Laptops of Apple brand Company!</p>
                   <div class="sort">
                       <label>Sort by: </label>
                       <select>
-                          <option>Prise</option>
+                          <option>Price</option>
                           <option>Date</option>
                       </select>
                   </div><br>
-                  <article id="macBook_first"><img id="img1_macBook"></article>
-                  <article id="macBook_second"><img id="img2_macBook"></article>
-                  <article id="macBook_third"><img id="img3_macBook"></article>
+                  <article id="macBook_first"><div class="about">
+                    <h6>Version: </h6><p id="iPXS_version"></p>
+                    <h6>Memory: </h6><p id="iPXS_memory"></p>
+                    <h6>Price: </h6><p id="iPXS_prise"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div><img id="img1_macBook"><div class="about">
+                    <h6>Version: </h6><p id="iPXS_version"></p>
+                    <h6>Memory: </h6><p id="iPXS_memory"></p>
+                    <h6>Price: </h6><p id="iPXS_prise"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article>
+                  <article id="macBook_second"><img id="img2_macBook"><div class="about">
+                    <h6>Version: </h6><p id="iPXS_version"></p>
+                    <h6>Memory: </h6><p id="iPXS_memory"></p>
+                    <h6>Price: </h6><p id="iPXS_prise"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article>
+                  <article id="macBook_third"><img id="img3_macBook"><div class="about">
+                    <h6>Version: </h6><p id="iPXS_version"></p>
+                    <h6>Memory: </h6><p id="iPXS_memory"></p>
+                    <h6>Price: </h6><p id="iPXS_prise"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article>
               </div>
               <div id="linux" style="display:none">
                   <p class="beginning">Laptops of Linux brand Company!</p>
-                  <article id="linux_first"><img id="img1_linux"></article>
-                  <article id="linux_second"><img id="img2_linux"></article>
-                  <article id="linux_third"><img id="img3_linux"></article>
+                  <article id="linux_first"><img id="img1_linux"><div class="about">
+                    <h6>Version: </h6><p id="iPXS_version"></p>
+                    <h6>Memory: </h6><p id="iPXS_memory"></p>
+                    <h6>Price: </h6><p id="iPXS_prise"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article>
+                  <article id="linux_second"><img id="img2_linux"><div class="about">
+                    <h6>Version: </h6><p id="iPXS_version"></p>
+                    <h6>Memory: </h6><p id="iPXS_memory"></p>
+                    <h6>Price: </h6><p id="iPXS_prise"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article>
+                  <article id="linux_third"><img id="img3_linux"><div class="about">
+                    <h6>Version: </h6><p id="iPXS_version"></p>
+                    <h6>Memory: </h6><p id="iPXS_memory"></p>
+                    <h6>Price: </h6><p id="iPXS_prise"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article>
               </div>
               <div id="acer" style="display:none">
                   <p class="beginning">Cell phones of Acer brand Company!</p>
-                  <article id="acer_first"><img id="img1_acer"></article>
-                  <article id="acer_second"><img id="img2_acer"></article>
-                  <article id="acer_third"><img id="img3_acer"></article>
+                  <article id="acer_first"><img id="img1_acer"><div class="about">
+                    <h6>Version: </h6><p id="iPXS_version"></p>
+                    <h6>Memory: </h6><p id="iPXS_memory"></p>
+                    <h6>Price: </h6><p id="iPXS_prise"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article>
+                  <article id="acer_second"><img id="img2_acer"><div class="about">
+                    <h6>Version: </h6><p id="iPXS_version"></p>
+                    <h6>Memory: </h6><p id="iPXS_memory"></p>
+                    <h6>Price: </h6><p id="iPXS_prise"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article>
+                  <article id="acer_third"><img id="img3_acer"><div class="about">
+                    <h6>Version: </h6><p id="iPXS_version"></p>
+                    <h6>Memory: </h6><p id="iPXS_memory"></p>
+                    <h6>Price: </h6><p id="iPXS_prise"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article>
               </div>
               <div id="hp" style="display:none">
                   <p class="beginning">Cell phones of HP brand Company!</p>
-                  <article id="hp_first"><img id="img1_hp"></article>
-                  <article id="hp_second"><img id="img2_hp"></article>
-                  <article id="hp_third"><img id="img3_hp"></article>
+                  <article id="hp_first"><img id="img1_hp"><div class="about">
+                    <h6>Version: </h6><p id="iPXS_version"></p>
+                    <h6>Memory: </h6><p id="iPXS_memory"></p>
+                    <h6>Price: </h6><p id="iPXS_prise"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article>
+                  <article id="hp_second"><img id="img2_hp"><div class="about">
+                    <h6>Version: </h6><p id="iPXS_version"></p>
+                    <h6>Memory: </h6><p id="iPXS_memory"></p>
+                    <h6>Price: </h6><p id="iPXS_prise"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article>
+                  <article id="hp_third"><img id="img3_hp"><div class="about">
+                    <h6>Version: </h6><p id="iPXS_version"></p>
+                    <h6>Memory: </h6><p id="iPXS_memory"></p>
+                    <h6>Price: </h6><p id="iPXS_prise"></p>
+                    <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg>Add to Cart</button>
+                </div></article>
               </div>
           </main>
 <script src="js/bootstrap.min.js"></script>

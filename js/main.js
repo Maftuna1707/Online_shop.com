@@ -35,7 +35,7 @@ let iphone8 = {
 }
 document.getElementById("iP8_memory").innerHTML = iphone8.memory
 document.getElementById("iP8_version").innerHTML = iphone8.version
-document.getElementById("iP8_prise").innerHTML = iphone8.price
+document.getElementById("iP8_price").innerHTML = iphone8.price
 document.getElementById("img1").src = iphone8.src
 let iphone11pro = {
     memory: '64GB',
@@ -45,7 +45,7 @@ let iphone11pro = {
 }
 document.getElementById("iP11pro_memory").innerHTML = iphone11pro.memory
 document.getElementById("iP11pro_version").innerHTML = iphone11pro.version
-document.getElementById("iP11pro_prise").innerHTML = iphone11pro.price
+document.getElementById("iP11pro_price").innerHTML = iphone11pro.price
 document.getElementById("img2").src = iphone11pro.src
 let iphoneXS = {
     memory: '64GB',
@@ -55,7 +55,7 @@ let iphoneXS = {
 }
 document.getElementById("iPXS_memory").innerHTML = iphoneXS.memory
 document.getElementById("iPXS_version").innerHTML = iphoneXS.version
-document.getElementById("iPXS_prise").innerHTML = iphoneXS.price
+document.getElementById("iPXS_price").innerHTML = iphoneXS.price
 document.getElementById("img3").src = iphoneXS.src
 
 
@@ -77,19 +77,38 @@ function sony() {
     }
 }
 let xperia5 = {
+    memory: '72GB',
+    version: 'Xperia 5 II',
+    price: '$899.99',
     src: 'images/XPERIA5.png'
 }
+document.getElementById("img1_sony").src = xperia5.src
+document.getElementById("xperia5_version").innerHTML = xperia5.version
+document.getElementById("xperia5_memory").innerHTML = xperia5.memory
+document.getElementById("xperia5_price").innerHTML = xperia5.price
 let xperia10 = {
+    memory: '65GB',
+    version: 'Xperia 10',
+    price: '$1222.99',
     src: 'images/xperia10.png'
 }
+document.getElementById("img2_sony").src = xperia10.src
+document.getElementById("xperia10_version").innerHTML = xperia10.version
+document.getElementById("xperia10_memory").innerHTML = xperia10.memory
+document.getElementById("xperia10_price").innerHTML = xperia10.price
+
 let xperiaL7 = {
+    memory: '72GB',
+    version: 'Xperia L7',
+    price: '$827.77',
     src: 'images/xperiaL7.png'
 }
-document.getElementById("img1_sony").src = xperia5.src
-document.getElementById("img2_sony").src = xperia10.src
 document.getElementById("img3_sony").src = xperiaL7.src
+document.getElementById("xperia7_version").innerHTML = xperiaL7.version
+document.getElementById("xperia7_memory").innerHTML = xperiaL7.memory
+document.getElementById("xperia7_price").innerHTML = xperiaL7.price
 
-
+let aa=56;
 
 function huawei() {
     let checkBox_huawei = document.getElementById("myCheck_huawei");
@@ -108,20 +127,101 @@ function huawei() {
         m_huawei.style.display = "none";
     }
 }
-let huaweiP40 = {
+let huawei1 = {
+    memory: '74GB',
+    version: 'Huawei P40',
+    price: '$999.99',
     src: 'images/Huawei-P40.png'
 }
-let huaweiP30 = {
+document.getElementById("img1_huawei").src = huawei1.src
+document.getElementById("huawei_version").innerHTML = huawei1.version
+document.getElementById("huawei_memory").innerHTML = huawei1.memory
+document.getElementById("huawei_price").innerHTML = huawei1.price
+
+let huawei2 = {
+    memory: '74GB',
+    version: 'Huawei P40',
+    price: '$999.99',
     src: 'images/huaweiP30.png'
 }
-let huaweiY7 = {
+document.getElementById("img2_huawei").src = huawei2.src
+document.getElementById("huawei2_version").innerHTML = huawei2.version
+document.getElementById("huawei2_memory").innerHTML = huawei2.memory
+document.getElementById("huawei2_price").innerHTML = huawei2.price
+let huawei3 = {
+    memory: '74GB',
+    version: 'Huawei P40',
+    price: '$999.99',
     src: 'images/Huawei-Y7.png'
 }
-document.getElementById("img1_huawei").src = huaweiP30.src
-document.getElementById("img2_huawei").src = huaweiP40.src
-document.getElementById("img3_huawei").src = huaweiY7.src
 
+document.getElementById("img3_huawei").src = huawei3.src
+document.getElementById("huawei3_version").innerHTML = huawei3.version
+document.getElementById("huawei3_memory").innerHTML = huawei3.memory
+// document.getElementById("huawei3_price").innerHTML = huawei3.price
 
+// let m_2015 = {
+//     src: 'images/2015-03.png'
+// }
+// let m_2020M1 = {
+//     src: 'images/2020M1.png'
+// }
+// let m_2018 = {
+//     src: 'images/macbook2018.png'
+// }
+// document.getElementById("img1_macBook").src = m_2015.src
+// // document.getElementById("img2_makBook").src = m_2018.src
+// document.getElementById("img3_macBook").src = m_2020M1.src
+
+function honor() {
+    var checkBox_honor = document.getElementById("myCheck_honor");
+    var m_honor = document.getElementById("honor");
+    if (checkBox_honor.checked == true){
+        main_right.style.display = "none";
+        left.style.borderRightStyle = "none"
+        right.style.borderLeftColor = "0d6efd"
+        right.style.borderLeftStyle = "solid"
+        m_honor.style.display = "block";
+    } else {
+        main_right.style.display = "block";
+        m_honor.style.display = "none";
+        right.style.borderLeftStyle = "none"
+        left.style.borderRightColor = "0d6efd"
+        left.style.borderRightStyle = "solid"
+    }
+}
+let honor1 = {
+    memory: '64GB',
+    version: 'Honor 30',
+    price: '$799.99',
+    src: 'images/honor30.png'
+}
+document.getElementById("img1_honor").src = honor1.src
+document.getElementById("honor1_version").innerHTML = honor1.version
+document.getElementById("honor1_memory").innerHTML = honor1.memory
+document.getElementById("honor1_price").innerHTML = honor1.price
+
+let honor2 = {
+    memory: '74GB',
+    version: 'Honor 20',
+    price: '$999.99',
+    src: 'images/honor20.png'
+}
+document.getElementById("img2_honor").src = honor2.src
+document.getElementById("honor2_version").innerHTML = honor2.version
+document.getElementById("honor2_memory").innerHTML = honor2.memory
+document.getElementById("honor2_price").innerHTML = honor2.price
+
+let honor3 = {
+    memory: '74GB',
+    version: 'Honor 9A',
+    price: '$999.99',
+    src: 'images/Honor9A.png'
+}
+document.getElementById("img3_honor").src = honor3.src
+document.getElementById("honor3_version").innerHTML = honor3.version
+document.getElementById("honor3_memory").innerHTML = honor3.memory
+document.getElementById("honor3_price").innerHTML = honor2.price
 
 function macBook() {
     let checkBox_macBook = document.getElementById("myCheck_macBook");
@@ -141,119 +241,10 @@ function macBook() {
         m_macBook.style.display = "none";
     }
 }
-let m_2015 = {
-    src: 'images/2015-03.png'
-}
-let m_2020M1 = {
-    src: 'images/2020M1.png'
-}
-let m_2018 = {
-    src: 'images/macbook2018.png'
-}
-document.getElementById("img1_macBook").src = m_2015.src
-document.getElementById("img2_makBook").src = m_2018.src
-document.getElementById("img3_macBook").src = m_2020M1.src
-
-
-
-
-
-// function sony() {
-//     var checkBox_sony = document.getElementById("myCheck_sony");
-//     var m_sony = document.getElementById("sony");
-//     if (checkBox_sony.checked == true){
-//        left.style.borderRightStyle = "none"
-//         right.style.borderLeftColor = "0d6efd"
-//         right.style.borderLeftStyle = "solid"
-//         main_right.style.display = "none";
-//         m_sony.style.display = "block";
-//     } else {
-//        right.style.borderLeftStyle = "none"
-//         left.style.borderRightColor = "0d6efd"
-//         left.style.borderRightStyle = "solid"
-//         main_right.style.display = "block";
-//         m_sony.style.display = "none";
-//     }
-// }
-// let xperia5 = {
-//     src: 'images/XPERIA5.png'
-// }
-// let xperia10 = {
-//     src: 'images/xperia10.png'
-// }
-// let xperiaL7 = {
-//     src: 'images/xperiaL7.png'
-// }
-// document.getElementById("img1_sony").src = xperia5.src
-// document.getElementById("img2_sony").src = xperia10.src
-// document.getElementById("img3_sony").src = xperiaL7.src
-//
-//
-//
-// function huawei() {
-//     var checkBox_huawei = document.getElementById("myCheck_huawei");
-//     var m_huawei = document.getElementById("huawei");
-//     if (checkBox_huawei.checked == true){
-//        left.style.borderRightStyle = "none"
-//          right.style.borderLeftColor = "0d6efd"
-//          right.style.borderLeftStyle = "solid"
-//         main_right.style.display = "none";
-//         m_huawei.style.display = "block";
-//     } else {
-//         main_right.style.display = "block";
-//         right.style.borderLeftStyle = "none"
-//          left.style.borderRightColor = "0d6efd"
-//          left.style.borderRightStyle = "solid"
-//         m_huawei.style.display = "none";
-//     }
-// }
-// let huaweiP40 = {
-//     src: 'images/Huawei-P40.png'
-// }
-// let huaweiP30 = {
-//     src: 'images/huaweiP30.png'
-// }
-// let huaweiY7 = {
-//     src: 'images/Huawei-Y7.png'
-// }
-// document.getElementById("img1_huawei").src = huaweiP30.src
-// document.getElementById("img2_huawei").src = huaweiP40.src
-// document.getElementById("img3_huawei").src = huaweiY7.src
-//
-//
-//
-function honor() {
-    var checkBox_honor = document.getElementById("myCheck_honor");
-    var m_honor = document.getElementById("honor");
-    if (checkBox_honor.checked == true){
-        main_right.style.display = "none";
-        left.style.borderRightStyle = "none"
-        right.style.borderLeftColor = "0d6efd"
-        right.style.borderLeftStyle = "solid"
-        m_honor.style.display = "block";
-    } else {
-        main_right.style.display = "block";
-        m_honor.style.display = "none";
-        right.style.borderLeftStyle = "none"
-        left.style.borderRightColor = "0d6efd"
-        left.style.borderRightStyle = "solid"
-    }
-}
-let honor30 = {
-    src: 'images/honor30.png'
-}
-let honor20 = {
-    src: 'images/honor20.png'
-}
-let honor9A = {
-    src: 'images/Honor9A.png'
-}
-document.getElementById("img1_honor").src = honor9A.src
-document.getElementById("img2_honor").src = honor20.src
-document.getElementById("img3_honor").src = honor30.src
 
 let counter = 0
-document.getElementsByTagName("button").onclick = function() {
+function count(){
     counter++
-}
-document.getElementById("counter").innerHTML = counter
+    document.getElementById("counter").innerHTML = counter;
+} 
+
