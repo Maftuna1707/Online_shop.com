@@ -223,6 +223,17 @@ document.getElementById("honor3_version").innerHTML = honor3.version
 document.getElementById("honor3_memory").innerHTML = honor3.memory
 document.getElementById("honor3_price").innerHTML = honor2.price
 
+let macBook1 = {
+    memory: '74GB',
+    version: 'MacBook',
+    price: '$2000.99',
+    src: 'images/2015-03.png'
+}
+document.getElementById("img1_macBook").src = honor3.src
+document.getElementById("macBook1_version").innerHTML = macBook1.version
+document.getElementById("macBook1_memory").innerHTML = macBook1.memory
+document.getElementById("macBook1_price").innerHTML = macBook1.price
+
 function macBook() {
     let checkBox_macBook = document.getElementById("myCheck_macBook");
     let m_macBook = document.getElementById("macBook");
