@@ -232,7 +232,7 @@ let macBook1 = {
 document.getElementById("img1_macBook").src = honor3.src
 document.getElementById("macBook1_version").innerHTML = macBook1.version
 document.getElementById("macBook1_memory").innerHTML = macBook1.memory
-document.getElementById("macBook1_price").innerHTML = macBook1.price
+// document.getElementById("macBook1_price").innerHTML = macBook1.price
 
 function macBook() {
     let checkBox_macBook = document.getElementById("myCheck_macBook");
