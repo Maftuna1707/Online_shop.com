@@ -1,11 +1,26 @@
+let num_1 = 0
 function l_phones() {
-    document.getElementById("menu_right1").className = "bi bi-chevron-down"
-    document.getElementById("companies_p").style.display = "block";
+    num_1++
+    if(num_1 % 2 != 0){
+        document.getElementById("menu_right1").className = "bi bi-chevron-down"
+        document.getElementById("companies_p").style.display = "block";
+    }else{
+        document.getElementById("menu_right1").className = "bi bi-chevron-right"
+        document.getElementById("companies_p").style.display = "none";
+    }
 }
+let num_2 = 0
 function l_laptops() {
-    document.getElementById("menu_right2").className = "bi bi-chevron-down"
-    document.getElementById("companies_c").style.display = "block";
+    num_2++
+    if(num_2 % 2 != 0){
+        document.getElementById("menu_right2").className = "bi bi-chevron-down"
+        document.getElementById("companies_c").style.display = "block";
+    }else{
+        document.getElementById("menu_right2").className = "bi bi-chevron-right"
+        document.getElementById("companies_c").style.display = "none";
+    }
 }
+
 let left = document.getElementById("left");
 let right = document.getElementById("right");
 let main_right = document.getElementById("main");
@@ -367,11 +382,10 @@ document.getElementById("acer3_version").innerHTML = acer3.version
 document.getElementById("acer3_memory").innerHTML = acer3.memory
 document.getElementById("acer3_price").innerHTML = acer3.price
 
-
 function hp() {
     let checkBox_hp = document.getElementById("myCheck_hp");
     let myCheck_hp = document.getElementById("hp");
-    if (checkBox_hp.checked == true){
+    if (checkBox_hp.checked == true ){
         main_right.style.display = "none";
         left.style.borderRightStyle = "none"
         right.style.borderLeftColor = "0d6efd"
@@ -425,4 +439,13 @@ function count(){
     counter++   
     document.getElementById("counter").innerHTML = counter;
 } 
+let num_n = 0
+function cart(){
+    num++
+    if(num%2!=0){
+        document.getElementById("orders").style.display = "block"
+    }else{
+        document.getElementById("orders").style.display = "none"
+    }
+}
 

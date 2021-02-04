@@ -4,7 +4,6 @@ nav{
     position: sticky !important;
 }
 #left{
-    /*border-right: 2px solid #0d6efd;*/
     width: 20%;
     float: left;
     color: black;
@@ -21,7 +20,6 @@ nav{
       margin-left: 20px;
       display: inline-block;
       width: 40%;
-      float: right;
   }
   .navbar{
       padding-left: 80px !important;
@@ -73,7 +71,6 @@ article{
 }
 article>img{
     display: inline-block;
-    float: left;
     width: 85%;
     height: 150px;
     position: relative;
@@ -88,8 +85,8 @@ footer{
 }
 nav>.bi-cart2{
     color: white;
-    height: 30px;
-    width: 30px;
+    height: 45px;
+    width: 45px;
     margin-right: 80px;
 }
 h6{
@@ -129,7 +126,13 @@ button{
     border-radius: 10px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #0769f8;
+}
+#orders{
+    padding: 30px;
+    background-color: white;
+    margin-top: 45px;
+    margin-right: -10px;
+    border-radius: 10px;
 }
