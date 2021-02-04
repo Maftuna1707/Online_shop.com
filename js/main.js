@@ -448,4 +448,3 @@ function cart(){
         document.getElementById("orders").style.display = "none"
     }
 }
-
