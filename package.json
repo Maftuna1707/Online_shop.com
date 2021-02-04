@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Maftuna1707/Online_shop.com/issues"
   },
-  "homepage": "https://github.com/Maftuna1707/Online_shop.com#readme"
+  "homepage": "https://github.com/Maftuna1707/Online_shop.com#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.6.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
 }

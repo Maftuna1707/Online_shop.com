@@ -37,12 +37,14 @@ document.getElementById("iP8_memory").innerHTML = iphone8.memory
 document.getElementById("iP8_version").innerHTML = iphone8.version
 document.getElementById("iP8_price").innerHTML = iphone8.price
 document.getElementById("img1").src = iphone8.src
+
 let iphone11pro = {
     memory: '64GB',
     version: 'iPhone 11 Pro',
     price: '$999.99',
     src: 'images/apple11pro.png'
 }
+
 document.getElementById("iP11pro_memory").innerHTML = iphone11pro.memory
 document.getElementById("iP11pro_version").innerHTML = iphone11pro.version
 document.getElementById("iP11pro_price").innerHTML = iphone11pro.price
@@ -160,19 +162,6 @@ document.getElementById("huawei3_version").innerHTML = huawei3.version
 document.getElementById("huawei3_memory").innerHTML = huawei3.memory
 // document.getElementById("huawei3_price").innerHTML = huawei3.price
 
-// let m_2015 = {
-//     src: 'images/2015-03.png'
-// }
-// let m_2020M1 = {
-//     src: 'images/2020M1.png'
-// }
-// let m_2018 = {
-//     src: 'images/macbook2018.png'
-// }
-// document.getElementById("img1_macBook").src = m_2015.src
-// // document.getElementById("img2_makBook").src = m_2018.src
-// document.getElementById("img3_macBook").src = m_2020M1.src
-
 function honor() {
     var checkBox_honor = document.getElementById("myCheck_honor");
     var m_honor = document.getElementById("honor");
@@ -223,17 +212,6 @@ document.getElementById("honor3_version").innerHTML = honor3.version
 document.getElementById("honor3_memory").innerHTML = honor3.memory
 document.getElementById("honor3_price").innerHTML = honor2.price
 
-let macBook1 = {
-    memory: '74GB',
-    version: 'MacBook',
-    price: '$2000.99',
-    src: 'images/2015-03.png'
-}
-document.getElementById("img1_macBook").src = honor3.src
-document.getElementById("macBook1_version").innerHTML = macBook1.version
-document.getElementById("macBook1_memory").innerHTML = macBook1.memory
-document.getElementById("macBook1_price").innerHTML = macBook1.price
-
 function macBook() {
     let checkBox_macBook = document.getElementById("myCheck_macBook");
     let m_macBook = document.getElementById("macBook");
@@ -252,10 +230,199 @@ function macBook() {
         m_macBook.style.display = "none";
     }
 }
+let macBook1 = {
+    memory: '74GB',
+    version: 'MacBook',
+    price: '$2000.99',
+    src: 'images/2015-03.png'
+}
+document.getElementById("img1_macBook").src = honor3.src
+document.getElementById("macBook1_version").innerHTML = macBook1.version
+document.getElementById("macBook1_memory").innerHTML = macBook1.memory
+document.getElementById("macBook1_price").innerHTML = macBook1.price
+
+let macBook2 = {
+    memory: '74GB',
+    version: 'MacBook',
+    price: '$2000.99',
+    src: 'images/2020M1.png'
+}
+document.getElementById("img2_macBook").src = macBook2.src
+document.getElementById("macBook2_version").innerHTML = macBook2.version
+document.getElementById("macBook2_memory").innerHTML = macBook2.memory
+document.getElementById("macBook2_price").innerHTML = macBook2.price
+
+let macBook3 = {
+    memory: '74GB',
+    version: 'MacBook',
+    price: '$2000.99',
+    src: 'images/macbook2018.png'
+}
+document.getElementById("img3_macBook").src = macBook3.src
+document.getElementById("macBook3_version").innerHTML = macBook3.version
+document.getElementById("macBook3_memory").innerHTML = macBook3.memory
+document.getElementById("macBook3_price").innerHTML = macBook3.price
+
+
+function lenovo() {
+    let checkBox_lenovo = document.getElementById("myCheck_lenovo");
+    let m_lenovo = document.getElementById("lenovo");
+    if (checkBox_lenovo.checked == true){
+        main_right.style.display = "none";
+        left.style.borderRightStyle = "none"
+        right.style.borderLeftColor = "0d6efd"
+        right.style.borderLeftStyle = "solid"
+        main_right.style.display = "none";
+        m_lenovo.style.display = "block";
+    } else {
+        right.style.borderLeftStyle = "none"
+        left.style.borderRightColor = "0d6efd"
+        left.style.borderRightStyle = "solid"
+        main_right.style.display = "block";
+        m_lenovo.style.display = "none";
+    }
+}
+let lenovo1 = {
+    memory: '74GB',
+    version: 'Lenovo',
+    price: '$2000.99',
+    src: 'images/2015-03.png'
+}
+document.getElementById("img1_lenovo").src = lenovo1.src
+document.getElementById("lenovo_version").innerHTML = lenovo1.version
+document.getElementById("lenovo_memory").innerHTML = lenovo1.memory
+document.getElementById("lenovo_price").innerHTML = lenovo1.price
+
+let lenovo2 = {
+    memory: '74GB',
+    version: 'Lenovo',
+    price: '$2000.99',
+    src: 'images/2020M1.png'
+}
+document.getElementById("img2_lenovo").src = lenovo2.src
+document.getElementById("lenovo2_version").innerHTML = lenovo2.version
+document.getElementById("lenovo2_memory").innerHTML = lenovo2.memory
+document.getElementById("lenovo2_price").innerHTML = lenovo2.price
+
+let lenovo3 = {
+    memory: '74GB',
+    version: 'Lenovo',
+    price: '$2000.99',
+    src: 'images/macbook2018.png'
+}
+document.getElementById("img3_lenovo").src = lenovo3.src
+document.getElementById("lenovo3_version").innerHTML = lenovo3.version
+document.getElementById("lenovo3_memory").innerHTML = lenovo3.memory
+document.getElementById("lenovo3_price").innerHTML = lenovo3.price
+
+
+function acer() {
+    let checkBox_lenovo = document.getElementById("myCheck_acer");
+    let m_lenovo = document.getElementById("acer");
+    if (checkBox_lenovo.checked == true){
+        main_right.style.display = "none";
+        left.style.borderRightStyle = "none"
+        right.style.borderLeftColor = "0d6efd"
+        right.style.borderLeftStyle = "solid"
+        main_right.style.display = "none";
+        m_lenovo.style.display = "block";
+    } else {
+        right.style.borderLeftStyle = "none"
+        left.style.borderRightColor = "0d6efd"
+        left.style.borderRightStyle = "solid"
+        main_right.style.display = "block";
+        m_lenovo.style.display = "none";
+    }
+}
+let acer1 = {
+    memory: '74GB',
+    version: 'Lenovo',
+    price: '$2000.99',
+    src: 'images/2015-03.png'
+}
+document.getElementById("img1_acer").src = acer1.src
+document.getElementById("acer1_version").innerHTML = acer1.version
+document.getElementById("acer1_version").innerHTML = acer1.memory
+document.getElementById("acer1_price").innerHTML = acer1.price
+
+let acer2 = {
+    memory: '74GB',
+    version: 'Lenovo',
+    price: '$2000.99',
+    src: 'images/2020M1.png'
+}
+document.getElementById("img2_acer").src = acer2.src
+document.getElementById("acer2_version").innerHTML = acer2.version
+document.getElementById("acer2_memory").innerHTML = acer2.memory
+document.getElementById("acer2_price").innerHTML = acer2.price
+
+let acer3 = {
+    memory: '74GB',
+    version: 'Lenovo',
+    price: '$2000.99',
+    src: 'images/macbook2018.png'
+}
+document.getElementById("img3_acer").src = acer3.src
+document.getElementById("acer3_version").innerHTML = acer3.version
+document.getElementById("acer3_memory").innerHTML = acer3.memory
+document.getElementById("acer3_price").innerHTML = acer3.price
+
+
+function hp() {
+    let checkBox_hp = document.getElementById("myCheck_hp");
+    let myCheck_hp = document.getElementById("hp");
+    if (checkBox_hp.checked == true){
+        main_right.style.display = "none";
+        left.style.borderRightStyle = "none"
+        right.style.borderLeftColor = "0d6efd"
+        right.style.borderLeftStyle = "solid"
+        main_right.style.display = "none";
+        myCheck_hp.style.display = "block";
+    } else {
+        right.style.borderLeftStyle = "none"
+        left.style.borderRightColor = "0d6efd"
+        left.style.borderRightStyle = "solid"
+        main_right.style.display = "block";
+        myCheck_hp.display = "none";
+    }
+}
+let hp1 = {
+    memory: '74GB',
+    version: 'HP',
+    price: '$2000.99',
+    src: 'images/2015-03.png'
+}
+document.getElementById("img1_hp").src = hp1.src
+document.getElementById("hp1_version").innerHTML = hp1.version
+document.getElementById("hp1_memory").innerHTML = hp1.memory
+document.getElementById("hp1_price").innerHTML = hp1.price
+
+let hp2={
+    memory: '74GB',
+    version: 'Lenovo',
+    price: '$2000.99',
+    src: 'images/2020M1.png'
+}
+document.getElementById("img2_hp").src = acer2.src
+document.getElementById("hp2_version").innerHTML = acer2.version
+document.getElementById("hp2_memory").innerHTML = acer2.memory
+document.getElementById("hp2_price").innerHTML = acer2.price
+
+let hp3 = {
+    memory: '74GB',
+    version: 'Lenovo',
+    price: '$2000.99',
+    src: 'images/macbook2018.png'
+}
+document.getElementById("img3_hp").src = hp3.src
+document.getElementById("hp3_version").innerHTML = hp3.version
+document.getElementById("hp3_memory").innerHTML = hp3.memory
+document.getElementById("hp3_price").innerHTML = hp3.price
+
 
 let counter = 0
 function count(){
-    counter++
+    counter++   
     document.getElementById("counter").innerHTML = counter;
 } 
 
