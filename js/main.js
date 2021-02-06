@@ -46,35 +46,40 @@ let iphone8 = {
     memory: '64GB',
     version: 'iPhone 8',
     price: '$299.99',
+    date: '2021/01/01',
     src: 'images/apple8.png'
 }
 document.getElementById("iP8_memory").innerHTML = iphone8.memory
 document.getElementById("iP8_version").innerHTML = iphone8.version
 document.getElementById("iP8_price").innerHTML = iphone8.price
 document.getElementById("img1").src = iphone8.src
+document.getElementById("iP8_date").innerHTML = iphone8.date
 
 let iphone11pro = {
     memory: '64GB',
     version: 'iPhone 11 Pro',
     price: '$999.99',
+    date: '2021/01/02',
     src: 'images/apple11pro.png'
 }
 
 document.getElementById("iP11pro_memory").innerHTML = iphone11pro.memory
 document.getElementById("iP11pro_version").innerHTML = iphone11pro.version
 document.getElementById("iP11pro_price").innerHTML = iphone11pro.price
+document.getElementById("iP11pro_date").innerHTML = iphone11pro.date
 document.getElementById("img2").src = iphone11pro.src
 let iphoneXS = {
     memory: '64GB',
     version: 'iPhone 11 Pro',
     price: '$999.99',
+    date: '2021/01/03',
     src: 'images/appleXS.png'
 }
 document.getElementById("iPXS_memory").innerHTML = iphoneXS.memory
 document.getElementById("iPXS_version").innerHTML = iphoneXS.version
 document.getElementById("iPXS_price").innerHTML = iphoneXS.price
 document.getElementById("img3").src = iphoneXS.src
-
+document.getElementById("iPXS_date").innerHTML = iphoneXS.date
 
 function sony() {
     let checkBox_sony = document.getElementById("myCheck_sony");
@@ -97,33 +102,40 @@ let xperia5 = {
     memory: '72GB',
     version: 'Xperia 5 II',
     price: '$899.99',
+    date: '2021/01/04',
     src: 'images/XPERIA5.png'
 }
 document.getElementById("img1_sony").src = xperia5.src
 document.getElementById("xperia5_version").innerHTML = xperia5.version
 document.getElementById("xperia5_memory").innerHTML = xperia5.memory
 document.getElementById("xperia5_price").innerHTML = xperia5.price
+document.getElementById("xperia5_date").innerHTML = xperia5.date
+
 let xperia10 = {
     memory: '65GB',
     version: 'Xperia 10',
     price: '$1222.99',
+    date: '2021/01/08',
     src: 'images/xperia10.png'
 }
 document.getElementById("img2_sony").src = xperia10.src
 document.getElementById("xperia10_version").innerHTML = xperia10.version
 document.getElementById("xperia10_memory").innerHTML = xperia10.memory
 document.getElementById("xperia10_price").innerHTML = xperia10.price
+document.getElementById("xperia10_date").innerHTML = xperia10.date
 
 let xperiaL7 = {
     memory: '72GB',
     version: 'Xperia L7',
     price: '$827.77',
+    date: '2021/01/06',
     src: 'images/xperiaL7.png'
 }
 document.getElementById("img3_sony").src = xperiaL7.src
 document.getElementById("xperia7_version").innerHTML = xperiaL7.version
 document.getElementById("xperia7_memory").innerHTML = xperiaL7.memory
 document.getElementById("xperia7_price").innerHTML = xperiaL7.price
+document.getElementById("xperia7_date").innerHTML = xperiaL7.date
 
 let aa=56;
 
@@ -148,34 +160,41 @@ let huawei1 = {
     memory: '74GB',
     version: 'Huawei P40',
     price: '$999.99',
+    date: '2021/01/17',
     src: 'images/Huawei-P40.png'
 }
 document.getElementById("img1_huawei").src = huawei1.src
 document.getElementById("huawei_version").innerHTML = huawei1.version
 document.getElementById("huawei_memory").innerHTML = huawei1.memory
 document.getElementById("huawei_price").innerHTML = huawei1.price
+document.getElementById("huawei_date").innerHTML = huawei1.date
 
 let huawei2 = {
     memory: '74GB',
     version: 'Huawei P40',
     price: '$999.99',
+    date: '2021/01/10',
     src: 'images/huaweiP30.png'
 }
 document.getElementById("img2_huawei").src = huawei2.src
 document.getElementById("huawei2_version").innerHTML = huawei2.version
 document.getElementById("huawei2_memory").innerHTML = huawei2.memory
 document.getElementById("huawei2_price").innerHTML = huawei2.price
+document.getElementById("huawei2_date").innerHTML = huawei2.date
+
 let huawei3 = {
     memory: '74GB',
     version: 'Huawei P40',
     price: '$999.99',
+    date: '2021/01/11',
     src: 'images/Huawei-Y7.png'
 }
 
 document.getElementById("img3_huawei").src = huawei3.src
 document.getElementById("huawei3_version").innerHTML = huawei3.version
 document.getElementById("huawei3_memory").innerHTML = huawei3.memory
-// document.getElementById("huawei3_price").innerHTML = huawei3.price
+document.getElementById("huawei3_price").innerHTML = huawei3.price
+document.getElementById("huawei3_date").innerHTML = huawei3.date
 
 function honor() {
     var checkBox_honor = document.getElementById("myCheck_honor");
@@ -198,34 +217,40 @@ let honor1 = {
     memory: '64GB',
     version: 'Honor 30',
     price: '$799.99',
+    date: '2021/01/18',
     src: 'images/honor30.png'
 }
 document.getElementById("img1_honor").src = honor1.src
 document.getElementById("honor1_version").innerHTML = honor1.version
 document.getElementById("honor1_memory").innerHTML = honor1.memory
 document.getElementById("honor1_price").innerHTML = honor1.price
+document.getElementById("honor1_date").innerHTML = honor1.date
 
 let honor2 = {
     memory: '74GB',
     version: 'Honor 20',
     price: '$999.99',
+    date: '2021/01/15',
     src: 'images/honor20.png'
 }
 document.getElementById("img2_honor").src = honor2.src
 document.getElementById("honor2_version").innerHTML = honor2.version
 document.getElementById("honor2_memory").innerHTML = honor2.memory
 document.getElementById("honor2_price").innerHTML = honor2.price
+document.getElementById("honor2_date").innerHTML = honor2.date
 
 let honor3 = {
     memory: '74GB',
     version: 'Honor 9A',
     price: '$999.99',
+    date: '2021/01/13',
     src: 'images/Honor9A.png'
 }
 document.getElementById("img3_honor").src = honor3.src
 document.getElementById("honor3_version").innerHTML = honor3.version
 document.getElementById("honor3_memory").innerHTML = honor3.memory
 document.getElementById("honor3_price").innerHTML = honor2.price
+document.getElementById("honor3_date").innerHTML = honor2.date
 
 function macBook() {
     let checkBox_macBook = document.getElementById("myCheck_macBook");
@@ -249,6 +274,7 @@ let macBook1 = {
     memory: '74GB',
     version: 'MacBook',
     price: '$2000.99',
+    date: '2021/01/21',
     src: 'images/2015-03.png'
 }
 document.getElementById("img1_macBook").src = honor3.src
@@ -260,6 +286,7 @@ let macBook2 = {
     memory: '74GB',
     version: 'MacBook',
     price: '$2000.99',
+    date: '2021/01/19',
     src: 'images/2020M1.png'
 }
 document.getElementById("img2_macBook").src = macBook2.src
@@ -271,6 +298,7 @@ let macBook3 = {
     memory: '74GB',
     version: 'MacBook',
     price: '$2000.99',
+    date: '2021/01/25',
     src: 'images/macbook2018.png'
 }
 document.getElementById("img3_macBook").src = macBook3.src
@@ -301,6 +329,7 @@ let lenovo1 = {
     memory: '74GB',
     version: 'Lenovo',
     price: '$2000.99',
+    date: '2021/01/22',
     src: 'images/2015-03.png'
 }
 document.getElementById("img1_lenovo").src = lenovo1.src
@@ -312,6 +341,7 @@ let lenovo2 = {
     memory: '74GB',
     version: 'Lenovo',
     price: '$2000.99',
+    date: '2021/01/29',
     src: 'images/2020M1.png'
 }
 document.getElementById("img2_lenovo").src = lenovo2.src
@@ -323,6 +353,7 @@ let lenovo3 = {
     memory: '74GB',
     version: 'Lenovo',
     price: '$2000.99',
+    date: '2021/01/24',
     src: 'images/macbook2018.png'
 }
 document.getElementById("img3_lenovo").src = lenovo3.src
@@ -353,6 +384,7 @@ let acer1 = {
     memory: '74GB',
     version: 'Lenovo',
     price: '$2000.99',
+    date: '2021/01/25',
     src: 'images/2015-03.png'
 }
 document.getElementById("img1_acer").src = acer1.src
@@ -364,6 +396,7 @@ let acer2 = {
     memory: '74GB',
     version: 'Lenovo',
     price: '$2000.99',
+    date: '2021/01/20',
     src: 'images/2020M1.png'
 }
 document.getElementById("img2_acer").src = acer2.src
@@ -375,6 +408,7 @@ let acer3 = {
     memory: '74GB',
     version: 'Lenovo',
     price: '$2000.99',
+    date: '2021/01/13',
     src: 'images/macbook2018.png'
 }
 document.getElementById("img3_acer").src = acer3.src
@@ -404,6 +438,7 @@ let hp1 = {
     memory: '74GB',
     version: 'HP',
     price: '$2000.99',
+    date: '2021/01/26',
     src: 'images/2015-03.png'
 }
 document.getElementById("img1_hp").src = hp1.src
@@ -415,6 +450,7 @@ let hp2={
     memory: '74GB',
     version: 'Lenovo',
     price: '$2000.99',
+    date: '2021/01/15',
     src: 'images/2020M1.png'
 }
 document.getElementById("img2_hp").src = acer2.src
@@ -426,6 +462,7 @@ let hp3 = {
     memory: '74GB',
     version: 'Lenovo',
     price: '$2000.99',
+    date: '2020/12/01',
     src: 'images/macbook2018.png'
 }
 document.getElementById("img3_hp").src = hp3.src
@@ -448,3 +485,4 @@ function cart(){
         document.getElementById("orders").style.display = "none"
     }
 }
+
