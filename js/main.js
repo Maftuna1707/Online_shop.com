@@ -485,4 +485,16 @@ function cart(){
         document.getElementById("orders").style.display = "none"
     }
 }
+// if(document.getElementById("iphone1_btn").onclick == true){
+//     console.log("Hello from iphone1!")
+// }
+// if(document.getElementById("iphone2_btn").onclick == true){
+//     console.log("Hello from iphone2!")
+// }
+// document.getElementById("iphone1_btn").onclick == function () {
+//     console.log("Hello from iphone1!")
+// }
+// console.log("Hello from iphone1!")
+var ret = hp1.price.replace('$','');
+console.log(ret);
 
