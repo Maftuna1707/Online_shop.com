@@ -495,15 +495,30 @@ document.getElementById("hp3_price").innerHTML = hp3.price
         // times.sort(dmyOrdA);
         // console.log(times)
         
-        let num3 = iphone1_btn
+        let btn0 = document.getElementById("btn0")
         let counter = 0
-        num3.addEventListener("click", function() {
+        btn0.addEventListener("click", function() {
             let ret = parseFloat(iphone8.price.replace('$',''));
             console.log(ret)
             counter++   
             document.getElementById("counter").innerHTML = counter;
 
         });
+        let btn1 = document.getElementById("btn1")
+        btn1.addEventListener("click", function() {
+            let ret = parseFloat(iphone11pro.price.replace('$',''));
+            console.log(ret)
+            counter++   
+            document.getElementById("counter").innerHTML = counter;
+        });
+        let btn2 = document.getElementById("btn2")
+        btn2.addEventListener("click", function() {
+            let ret = parseFloat(iphoneXS.price.replace('$',''));
+            console.log(ret)
+            counter++   
+            document.getElementById("counter").innerHTML = counter;
+        });
+        let container_bin = [btn0, btn1, btn2]
         
         // function count(){
         //     counter++   
@@ -518,9 +533,14 @@ document.getElementById("hp3_price").innerHTML = hp3.price
                 document.getElementById("orders").style.display = "none"
             }
         }
-        // if () {
-            
-        // } else {
-            
-        // }
-        console.log(`"Hello"`)
+        document.getElementById("counter_box").onmouseenter = function (){
+            document.getElementById("order").innerHTML = "Hello hello hello hello world hello world hello world hello world hello world hello world hello world hello world"
+                document.getElementById("orders").style.display = "block"
+            }
+            document.getElementById("counter_box").onmouseleave = function (){
+                    document.getElementById("orders").style.display = "none"
+                }
+        if (parseInt(document.getElementById("counter"))>0) {
+        } else {
+
+        }
