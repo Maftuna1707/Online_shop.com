@@ -518,8 +518,9 @@ document.getElementById("hp3_price").innerHTML = hp3.price
                 document.getElementById("orders").style.display = "none"
             }
         }
-        if () {
+        // if () {
             
-        } else {
+        // } else {
             
-        }
+        // }
+        console.log(`"Hello"`)
