@@ -46,7 +46,7 @@ let iphone8 = {
     memory: '64GB',
     version: 'iPhone 8',
     price: '$299.99',
-    date: '2021/01/01',
+    date: '01-09-2020',
     src: 'images/apple8.png'
 }
 document.getElementById("iP8_memory").innerHTML = iphone8.memory
@@ -59,7 +59,7 @@ let iphone11pro = {
     memory: '64GB',
     version: 'iPhone 11 Pro',
     price: '$999.99',
-    date: '2021/01/02',
+    date: '10-09-2020',
     src: 'images/apple11pro.png'
 }
 
@@ -72,7 +72,7 @@ let iphoneXS = {
     memory: '64GB',
     version: 'iPhone 11 Pro',
     price: '$999.99',
-    date: '2021/01/03',
+    date: '19-09-2020',
     src: 'images/appleXS.png'
 }
 document.getElementById("iPXS_memory").innerHTML = iphoneXS.memory
@@ -102,7 +102,7 @@ let xperia5 = {
     memory: '72GB',
     version: 'Xperia 5 II',
     price: '$899.99',
-    date: '2021/01/04',
+    date: '26-09-2020',
     src: 'images/XPERIA5.png'
 }
 document.getElementById("img1_sony").src = xperia5.src
@@ -115,7 +115,7 @@ let xperia10 = {
     memory: '65GB',
     version: 'Xperia 10',
     price: '$1222.99',
-    date: '2021/01/08',
+    date: '02-10-2020',
     src: 'images/xperia10.png'
 }
 document.getElementById("img2_sony").src = xperia10.src
@@ -128,7 +128,7 @@ let xperiaL7 = {
     memory: '72GB',
     version: 'Xperia L7',
     price: '$827.77',
-    date: '2021/01/06',
+    date: '15-10-2020',
     src: 'images/xperiaL7.png'
 }
 document.getElementById("img3_sony").src = xperiaL7.src
@@ -160,7 +160,7 @@ let huawei1 = {
     memory: '74GB',
     version: 'Huawei P40',
     price: '$999.99',
-    date: '2021/01/17',
+    date: '16-09-2020',
     src: 'images/Huawei-P40.png'
 }
 document.getElementById("img1_huawei").src = huawei1.src
@@ -173,7 +173,7 @@ let huawei2 = {
     memory: '74GB',
     version: 'Huawei P40',
     price: '$999.99',
-    date: '2021/01/10',
+    date: '01-10-2020',
     src: 'images/huaweiP30.png'
 }
 document.getElementById("img2_huawei").src = huawei2.src
@@ -186,7 +186,7 @@ let huawei3 = {
     memory: '74GB',
     version: 'Huawei P40',
     price: '$999.99',
-    date: '2021/01/11',
+    date: '03-08-2020',
     src: 'images/Huawei-Y7.png'
 }
 
@@ -217,7 +217,7 @@ let honor1 = {
     memory: '64GB',
     version: 'Honor 30',
     price: '$799.99',
-    date: '2021/01/18',
+    date: '11-09-2020',
     src: 'images/honor30.png'
 }
 document.getElementById("img1_honor").src = honor1.src
@@ -230,7 +230,7 @@ let honor2 = {
     memory: '74GB',
     version: 'Honor 20',
     price: '$999.99',
-    date: '2021/01/15',
+    date: '30-09-2020',
     src: 'images/honor20.png'
 }
 document.getElementById("img2_honor").src = honor2.src
@@ -243,7 +243,7 @@ let honor3 = {
     memory: '74GB',
     version: 'Honor 9A',
     price: '$999.99',
-    date: '2021/01/13',
+    date: '07-09-2020',
     src: 'images/Honor9A.png'
 }
 document.getElementById("img3_honor").src = honor3.src
@@ -274,7 +274,7 @@ let macBook1 = {
     memory: '74GB',
     version: 'MacBook',
     price: '$2000.99',
-    date: '2021/01/21',
+    date: '01-01-2021',
     src: 'images/2015-03.png'
 }
 document.getElementById("img1_macBook").src = honor3.src
@@ -286,7 +286,7 @@ let macBook2 = {
     memory: '74GB',
     version: 'MacBook',
     price: '$2000.99',
-    date: '2021/01/19',
+    date: '05-01-2021',
     src: 'images/2020M1.png'
 }
 document.getElementById("img2_macBook").src = macBook2.src
@@ -298,7 +298,7 @@ let macBook3 = {
     memory: '74GB',
     version: 'MacBook',
     price: '$2000.99',
-    date: '2021/01/25',
+    date: '08-01-2021',
     src: 'images/macbook2018.png'
 }
 document.getElementById("img3_macBook").src = macBook3.src
@@ -329,7 +329,7 @@ let lenovo1 = {
     memory: '74GB',
     version: 'Lenovo',
     price: '$2000.99',
-    date: '2021/01/22',
+    date: '11-01-2021',
     src: 'images/2015-03.png'
 }
 document.getElementById("img1_lenovo").src = lenovo1.src
@@ -341,7 +341,7 @@ let lenovo2 = {
     memory: '74GB',
     version: 'Lenovo',
     price: '$2000.99',
-    date: '2021/01/29',
+    date: '01-02-2021',
     src: 'images/2020M1.png'
 }
 document.getElementById("img2_lenovo").src = lenovo2.src
@@ -353,7 +353,7 @@ let lenovo3 = {
     memory: '74GB',
     version: 'Lenovo',
     price: '$2000.99',
-    date: '2021/01/24',
+    date: '09-01-2021',
     src: 'images/macbook2018.png'
 }
 document.getElementById("img3_lenovo").src = lenovo3.src
@@ -384,7 +384,7 @@ let acer1 = {
     memory: '74GB',
     version: 'Lenovo',
     price: '$2000.99',
-    date: '2021/01/25',
+    date: '05-01-2021',
     src: 'images/2015-03.png'
 }
 document.getElementById("img1_acer").src = acer1.src
@@ -396,7 +396,7 @@ let acer2 = {
     memory: '74GB',
     version: 'Lenovo',
     price: '$2000.99',
-    date: '2021/01/20',
+    date: '05-02-2021',
     src: 'images/2020M1.png'
 }
 document.getElementById("img2_acer").src = acer2.src
@@ -408,7 +408,7 @@ let acer3 = {
     memory: '74GB',
     version: 'Lenovo',
     price: '$2000.99',
-    date: '2021/01/13',
+    date: '21-01-2021',
     src: 'images/macbook2018.png'
 }
 document.getElementById("img3_acer").src = acer3.src
@@ -438,7 +438,7 @@ let hp1 = {
     memory: '74GB',
     version: 'HP',
     price: '$2000.99',
-    date: '2021/01/26',
+    date: '04-02-2021',
     src: 'images/2015-03.png'
 }
 document.getElementById("img1_hp").src = hp1.src
@@ -450,7 +450,7 @@ let hp2={
     memory: '74GB',
     version: 'Lenovo',
     price: '$2000.99',
-    date: '2021/01/15',
+    date: '04-01-2021',
     src: 'images/2020M1.png'
 }
 document.getElementById("img2_hp").src = acer2.src
@@ -462,7 +462,7 @@ let hp3 = {
     memory: '74GB',
     version: 'Lenovo',
     price: '$2000.99',
-    date: '2020/12/01',
+    date: '01-09-2020',
     src: 'images/macbook2018.png'
 }
 document.getElementById("img3_hp").src = hp3.src
@@ -471,30 +471,47 @@ document.getElementById("hp3_memory").innerHTML = hp3.memory
 document.getElementById("hp3_price").innerHTML = hp3.price
 
 
-let counter = 0
-function count(){
-    counter++   
-    document.getElementById("counter").innerHTML = counter;
-} 
-let num_n = 0
-function cart(){
-    num++
-    if(num%2!=0){
-        document.getElementById("orders").style.display = "block"
-    }else{
-        document.getElementById("orders").style.display = "none"
-    }
-}
 // if(document.getElementById("iphone1_btn").onclick == true){
-//     console.log("Hello from iphone1!")
-// }
-// if(document.getElementById("iphone2_btn").onclick == true){
-//     console.log("Hello from iphone2!")
-// }
-// document.getElementById("iphone1_btn").onclick == function () {
-//     console.log("Hello from iphone1!")
-// }
-// console.log("Hello from iphone1!")
-var ret = hp1.price.replace('$','');
-console.log(ret);
+    //     console.log("Hello from iphone1!")
+    // }
+    // if(document.getElementById("iphone2_btn").onclick == true){
+        //     console.log("Hello from iphone2!")
+        // }
+        // document.getElementById("iphone1_btn").onclick == function () {
+            //     console.log("Hello from iphone1!")
+            // }
+            // console.log("Hello from iphone1!")
 
+            
+            
+            //   let ret = parseFloat(hp1.price.replace('$',''));
+            //   console.log(ret+12.33);
+            
+            // times = ["01-09-2013", "01-09-2013", "27-08-2013", "27-08-2013", "28-08-2013", "28-08-2013", "28-08-2013", "28-08-2013", "29-08-2013", "29-08-2013", "30-08-2013","30-08-2013", "31-08-2013", "31-08-2013"]
+        // function dmyOrdA(a,b){ return myDate(a) - myDate(b);}
+        // function dmyOrdD (a,b){ return myDate(b) - myDate(a);}
+        // function myDate(s){var a=s.split(/-|\//); return new Date(a[2],a[1]-1,a[0]);}
+        
+        // times.sort(dmyOrdA);
+        // console.log(times)
+        
+        let num = iphone1_btn
+        num.addEventListener("click", function() {
+            let ret = parseFloat(iphone8.price.replace('$',''));
+            console.log(ret)
+        });
+        
+        let counter = 0
+        function count(){
+            counter++   
+            document.getElementById("counter").innerHTML = counter;
+        } 
+        let num_n = 0
+        function cart(){
+            num++
+            if(num%2!=0){
+                document.getElementById("orders").style.display = "block"
+            }else{
+                document.getElementById("orders").style.display = "none"
+            }
+        }
