@@ -495,17 +495,20 @@ document.getElementById("hp3_price").innerHTML = hp3.price
         // times.sort(dmyOrdA);
         // console.log(times)
         
-        let num = iphone1_btn
-        num.addEventListener("click", function() {
+        let num3 = iphone1_btn
+        let counter = 0
+        num3.addEventListener("click", function() {
             let ret = parseFloat(iphone8.price.replace('$',''));
             console.log(ret)
-        });
-        
-        let counter = 0
-        function count(){
             counter++   
             document.getElementById("counter").innerHTML = counter;
-        } 
+
+        });
+        
+        // function count(){
+        //     counter++   
+        //     document.getElementById("counter").innerHTML = counter;
+        // } 
         let num_n = 0
         function cart(){
             num++
@@ -514,4 +517,9 @@ document.getElementById("hp3_price").innerHTML = hp3.price
             }else{
                 document.getElementById("orders").style.display = "none"
             }
+        }
+        if () {
+            
+        } else {
+            
         }
