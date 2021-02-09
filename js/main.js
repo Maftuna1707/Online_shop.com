@@ -534,16 +534,14 @@ document.getElementById("hp3_price").innerHTML = hp3.price
             }
         }
         document.getElementById("counter_box").onmouseenter = function (){
-            document.getElementById("order").innerHTML = "Hello hello hello hello world hello world hello world hello world hello world hello world hello world hello world"
+            for (let i = 0; i < container_bin.length; i++) {
+                document.getElementById("order").innerHTML = container_bin[i]
                 document.getElementById("orders").style.display = "block"
+            }
             }
             document.getElementById("counter_box").onmouseleave = function (){
                     document.getElementById("orders").style.display = "none"
                 }
-        if (parseInt(document.getElementById("counter"))>0) {
-        } else {
-
-        }
 
 
         
