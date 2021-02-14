@@ -533,7 +533,7 @@ document.getElementById("hp3_price").innerHTML = hp3.price
         }
         document.getElementById("counter_box").onmouseenter = function (){
             for (let i = 0; i < container_bin.length; i++) {
-                document.getElementById("order").innerHTML = container_bin[i]
+                document.getElementById("order").innerHTML = container_bin[i]+`<br>`;
                 document.getElementById("orders").style.display = "block"
             }
             }
