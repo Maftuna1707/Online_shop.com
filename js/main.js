@@ -495,35 +495,33 @@ document.getElementById("hp3_price").innerHTML = hp3.price
         // times.sort(dmyOrdA);
         // console.log(times)
         
+        let container_bin = []
         let btn0 = document.getElementById("btn0")
         let counter = 0
         btn0.addEventListener("click", function() {
-            let ret = parseFloat(iphone8.price.replace('$',''));
-            console.log(ret)
+            let ret0 = parseFloat(iphone8.price.replace('$',''));
+            let ret00 = `Iphone8: $` + ret0;
             counter++   
+            container_bin.push(ret00)
             document.getElementById("counter").innerHTML = counter;
 
         });
         let btn1 = document.getElementById("btn1")
         btn1.addEventListener("click", function() {
-            let ret = parseFloat(iphone11pro.price.replace('$',''));
-            console.log(ret)
+            let ret0 = parseFloat(iphone11pro.price.replace('$',''));
+            let ret01 = 'Iphone11 PRO: $' + ret0;
             counter++   
+            container_bin.push(ret01)
             document.getElementById("counter").innerHTML = counter;
         });
         let btn2 = document.getElementById("btn2")
         btn2.addEventListener("click", function() {
-            let ret = parseFloat(iphoneXS.price.replace('$',''));
-            console.log(ret)
+            let ret0 = parseFloat(iphoneXS.price.replace('$',''));
+            let ret02 = 'IphoneXS: $' + ret0;
             counter++   
+            container_bin.push(ret02)
             document.getElementById("counter").innerHTML = counter;
         });
-        let container_bin = [btn0, btn1, btn2]
-        
-        // function count(){
-        //     counter++   
-        //     document.getElementById("counter").innerHTML = counter;
-        // } 
         let num_n = 0
         function cart(){
             num++
