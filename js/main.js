@@ -494,12 +494,13 @@ document.getElementById("hp3_price").innerHTML = hp3.price
         
         // times.sort(dmyOrdA);
         // console.log(times)
-        
+        let sum = 0
         let container_bin = []
         let btn0 = document.getElementById("btn0")
         let counter = 0
         btn0.addEventListener("click", function() {
             let ret0 = parseFloat(iphone8.price.replace('$',''));
+            sum=+ret0
             let ret00 = `Iphone8: $` + ret0;
             counter++   
             container_bin.push(ret00)
@@ -509,6 +510,7 @@ document.getElementById("hp3_price").innerHTML = hp3.price
         let btn1 = document.getElementById("btn1")
         btn1.addEventListener("click", function() {
             let ret0 = parseFloat(iphone11pro.price.replace('$',''));
+            sum=+ret0
             let ret01 = 'Iphone11 PRO: $' + ret0;
             counter++   
             container_bin.push(ret01)
@@ -517,9 +519,46 @@ document.getElementById("hp3_price").innerHTML = hp3.price
         let btn2 = document.getElementById("btn2")
         btn2.addEventListener("click", function() {
             let ret0 = parseFloat(iphoneXS.price.replace('$',''));
+            sum=+ret0
             let ret02 = 'IphoneXS: $' + ret0;
             counter++   
             container_bin.push(ret02)
+            document.getElementById("counter").innerHTML = counter;
+        });
+        let btn3 = document.getElementById("btn3")
+        btn3.addEventListener("click", function() {
+            let ret0 = parseFloat(xperia5.price.replace('$',''));
+            sum=+ret0
+            let ret03 = 'Sony Xperia 5: $' + ret0;
+            counter++   
+            container_bin.push(ret03)
+            document.getElementById("counter").innerHTML = counter;
+        });
+        let btn4 = document.getElementById("sony2_btn")
+        btn4.addEventListener("click", function() {
+            let ret0 = parseFloat(xperia10.price.replace('$',''));
+            sum=+ret0
+            let ret04 = 'Sony Xperia 10: $' + ret0;
+            counter++   
+            container_bin.push(ret04)
+            document.getElementById("counter").innerHTML = counter;
+        });
+        let btn5 = document.getElementById("sony3_btn")
+        btn5.addEventListener("click", function() {
+            let ret0 = parseFloat(xperiaL7.price.replace('$',''));
+            sum=+ret0
+            let ret05 = 'Sony Xperia 7: $' + ret0;
+            counter++   
+            container_bin.push(ret05)
+            document.getElementById("counter").innerHTML = counter;
+        });
+        let btn6 = document.getElementById("huawei1_btn")   
+        btn6.addEventListener("click", function() {
+            let ret0 = parseFloat(huawei1.price.replace('$',''));
+            sum=+ret0
+            let ret06 = 'huawei 1: $' + ret0;
+            counter++   
+            container_bin.push(ret06)
             document.getElementById("counter").innerHTML = counter;
         });
         let num_n = 0
