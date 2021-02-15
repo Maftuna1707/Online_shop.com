@@ -470,30 +470,6 @@ document.getElementById("hp3_version").innerHTML = hp3.version
 document.getElementById("hp3_memory").innerHTML = hp3.memory
 document.getElementById("hp3_price").innerHTML = hp3.price
 
-
-// if(document.getElementById("iphone1_btn").onclick == true){
-    //     console.log("Hello from iphone1!")
-    // }
-    // if(document.getElementById("iphone2_btn").onclick == true){
-        //     console.log("Hello from iphone2!")
-        // }
-        // document.getElementById("iphone1_btn").onclick == function () {
-            //     console.log("Hello from iphone1!")
-            // }
-            // console.log("Hello from iphone1!")
-
-            
-            
-            //   let ret = parseFloat(hp1.price.replace('$',''));
-            //   console.log(ret+12.33);
-            
-            // times = ["01-09-2013", "01-09-2013", "27-08-2013", "27-08-2013", "28-08-2013", "28-08-2013", "28-08-2013", "28-08-2013", "29-08-2013", "29-08-2013", "30-08-2013","30-08-2013", "31-08-2013", "31-08-2013"]
-        // function dmyOrdA(a,b){ return myDate(a) - myDate(b);}
-        // function dmyOrdD (a,b){ return myDate(b) - myDate(a);}
-        // function myDate(s){var a=s.split(/-|\//); return new Date(a[2],a[1]-1,a[0]);}
-        
-        // times.sort(dmyOrdA);
-        // console.log(times)
         let sum = 0
         let container_bin = []
         let btn0 = document.getElementById("btn0")
@@ -579,6 +555,3 @@ document.getElementById("hp3_price").innerHTML = hp3.price
             document.getElementById("counter_box").onmouseleave = function (){
                     document.getElementById("orders").style.display = "none"
                 }
-
-
-        
